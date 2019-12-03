@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('#rectangle|#time|Mili|米粒|Happy Birthday!|生日快乐|Did you know?|你知道吗？|也许是缘分|我们|都不愿|伤害|最不愿伤害的人|但|还是发生了|相信我|因为我爱你|让我们|彼此|好好珍惜|不要生气|爱你的|郭宇轩');
+      S.UI.simulate('#rectangle|#time|Mi li\n 米粒|Happy Birthday!\n生日快乐|Did you know?|你知道吗？|也许是缘分|我们|都不愿|伤害|最不愿伤害的人|但|还是发生了|相信我|因为我爱你|让我们|彼此|好好珍惜|不要生气|爱你的|郭宇轩');
     }
 
     S.Drawing.loop(function () {
@@ -210,7 +210,7 @@ S.UI = (function () {
           break;
 
         default:
-          S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));		  
+          S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
     }, 4000, sequence.length);
   }
