@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('#rectangle|#time|Mi li\n 米粒|Happy Birthday!\n生日快乐|Did you know?|你知道吗？|也许是缘分|我们|都不愿|伤害|最不愿伤害的人|但|还是发生了|相信我|因为我爱你|让我们|彼此|好好珍惜|不要生气|爱你的|郭宇轩');
+      S.UI.simulate('#rectangle|#time|米 粒|Happy Birthday!|2018/4/26 我们第一次认识|2018/5/20 我们第一次聊到深夜|中途经历了无数次的电话|2018/7/5 我们第一次见面|2018/7/7 我向你表白|伴随着迪士尼的烟火|我们约定了要为彼此奋斗|2018/7/10 你回到株洲|我们开始了为期一个月的异地恋');
     }
 
     S.Drawing.loop(function () {
